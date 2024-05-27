@@ -13,7 +13,7 @@ export class News extends Component {
     }
     async componentDidMount(){
       console.log("cdm");
-      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=8c9a7d4bd8034cc1bc983b9229134aa5&page=1&pagesize=${this.props.pagesize}`;
+      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=[YOUR_API_KEY]&page=1&pagesize=${this.props.pagesize}`;
       let data = await fetch(url);
       let parsedData = await data.json()
       console.log(parsedData);
